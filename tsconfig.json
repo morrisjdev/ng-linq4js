@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ng-linq4js": [
+        "dist/ng-linq4js"
+      ],
+      "ng-linq4js/*": [
+        "dist/ng-linq4js/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
