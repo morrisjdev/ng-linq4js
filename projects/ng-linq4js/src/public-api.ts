@@ -3,3 +3,4 @@
  */
 
 export * from './lib/ng-linq4js.module';
+export * from './lib/rxjs-extensions/operators';

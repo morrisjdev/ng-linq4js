@@ -1,5 +1,33 @@
 <h1>ng-linq4js demo</h1>
 
-{{ test | qWhere: 'x => x === "geh"' | json }}
+<!--<h2>All</h2>-->
+<!--{{ testArray | json }} <br>-->
 
-<router-outlet></router-outlet>
+<!--<h2>Reverse</h2>-->
+<!--{{ testArray | reverse | json }} <br>-->
+
+<!--<h2>Where age > 50</h2>-->
+<!--{{ testArray | where: 'x => x.age > 50' | json }} <br>-->
+
+<!--<h2>Where any pets</h2>-->
+<!--{{ testArray | where: anyPetsFilter | json }} <br>-->
+
+<!--<h2>Select Many:</h2>-->
+<!--{{ testArray | selectMany: 'x => x.pets' | json }} <br>-->
+
+<!--<h2>Evaluate:</h2>-->
+<!--{{ testArray | evaluate: 'select x => x.pets' | json }} <br>-->
+
+<!--<h2>Sum:</h2>-->
+<!--{{ testArray | select: 'x => x.age' | sum }} <br>-->
+
+<!--<h2>Average:</h2>-->
+<!--{{ testArray | select: 'x => x.age' | average }} <br>-->
+
+<!--<h2>Min:</h2>-->
+<!--{{ testArray | select: 'x => x.age' | min }} <br>-->
+
+<!--<h2>Max:</h2>-->
+<!--{{ testArray | select: 'x => x.age' | max }} <br>-->
+
+{{ testArray$ | async }}
